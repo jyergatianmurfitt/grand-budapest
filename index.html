@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>The Grand Budapest Hotel</title>
+  </head>
+  <body>
+    <nav class="navbar sticky">
+        <ul class="navbar_list" id="dropdownClick">
+          <li class="dropdownIcon" onclick="dropdownMenu()" style="cursor: pointer;">&#9776;</li>
+          <li class="navbar_item itemTop"><a src="#" style="cursor: pointer;">Book</a></li>
+          <li class="navbar_item"><a src="#" style="cursor: pointer;">Cast</a></li>
+          <li class="navbar_item"><a src="#" style="cursor: pointer;">Reviews</a></li>
+        </ul>
+      <h1 class="navbar_name">The Grand Budapest Hotel</h1>
+    </nav>
+
+    <div class="section section-one">
+      <div class="row nameRow">
+        <img class="nameImg" src="images/name.png">
+      </div>
+      <div class="row hotelRow">
+        <img class="hotelImg" id="hotelImg" src="images/hotel.png">
+      </div>
+    </div>
+
+    <div class="section section-two">
+      <div class="row row-2">
+        <div class="col">
+          <img class="secondImg" src="images/img3.jpg" alt="">
+        </div>
+        <div class="col">
+          <div class="bio">
+            <h1 class="heading">The Plot</h1>
+            <p class="blockTxt">In the 1930s, the Grand Budapest Hotel is a popular European ski resort, presided over by concierge Gustave H. (Ralph Fiennes). Zero, a junior lobby boy, becomes Gustave's friend and protege. Gustave prides himself on providing first-class service to the hotel's guests, including satisfying the sexual needs of the many elderly women who stay there. When one of Gustave's lovers dies mysteriously, Gustave finds himself the recipient of a priceless painting and the chief suspect in her murder.</p>
+            <br>
+            <h2 class="genre">Adventure &#8226; Comedy &#8226; Crime</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-three">
+      <div class="row row-3">
+        <div class="col cardCol" onclick="location.href='https://www.netflix.com/browse';" style="cursor: pointer;" target="_blank" rel="noopener noreferrer">
+          <div class="cardContents">
+            <h3 class="heading cardHeading"><a>Stream now on</a></h3>
+            <img src="images/netflix.png" class="netflixImg">
+          </div>
+        </div>
+        <div class="col cardCol" onclick="location.href='https://www.disneyplus.com/en-gb';" style="cursor: pointer;" target="_blank" rel="noopener noreferrer">
+          <div class="cardContents">
+            <h3 class="heading cardHeading"><a>Stream now on</a></h3>
+            <img src="images/disney.png" class="disneyImg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-four">
+      <div class="row row-4">
+        <div class="col-10 galleryCol">
+          <h1 class="header">Gallery</h1>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/img4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/img5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row footerRow">
+        <h1 class="footer_name">The Grand Budapest Hotel</h1>
+        <div class="row socialRow">
+          <h2 class="socialTitle">Follow the movie:</h2>
+          <ul class="socialList">
+            <li class="socialItem"><a class="socialAnchor" href="#">Facebook</a></li>
+            <li class="socialItem"><a class="socialAnchor" href="#">Instagram</a></li>
+            <li class="socialItem"><a class="socialAnchor" href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+     function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "navbar_list") {
+        x.className += " responsive";
+        /*change navBar to navBar.responsive*/
+      } else {
+        x.className = "navbar_list";
+      }
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

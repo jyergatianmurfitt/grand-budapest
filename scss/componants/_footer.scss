@@ -1,0 +1,41 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.footerRow {
+  text-align: center;
+  padding: 5% 0 3% 0;
+  background-color: variables.$darkBackground;
+}
+
+.socialRow {
+  display: block;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.footer_name {
+  @include mixins.subheading;
+  font-size: variables.$fontMd;
+  color: variables.$mainPink;
+}
+
+.socialList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.socialItem {
+  padding: 0px 15px;
+}
+
+.socialAnchor, .socialTitle {
+  text-decoration: none;
+  @include mixins.bold;
+  font-size: variables.$fontSm;
+  color: white;
+}
+
+.socialAnchor:hover {
+  color: variables.$mainBlue;
+}

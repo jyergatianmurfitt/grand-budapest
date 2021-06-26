@@ -1,0 +1,330 @@
+/**** Colours ****/
+/**** Font-sizes ****/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/**** Rows *****/
+.row-2 {
+  padding: 6% 0;
+  background-color: #be1416;
+}
+
+.row-4 {
+  padding: 6% 0;
+  background-color: #cdd4f8;
+}
+
+/**** Images *****/
+.nameImg, .hotelImg {
+  height: 40vh;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.secondImg {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.disneyImg, .netflixImg {
+  width: 20%;
+}
+
+/**** Sections *****/
+.section-one {
+  background-image: url("../images/bkg1.webp");
+  background-size: cover;
+  height: 100vh;
+  margin-top: 68px;
+  padding-top: 60px;
+}
+
+.galleryCol {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.header {
+  font-family: fantasy;
+  color: #be1416;
+  font-size: 32px;
+  margin-bottom: 5%;
+}
+
+/******************** Mobile ******************/
+@media screen and (max-width: 900px) {
+  /**** Nav ****/
+  h1.navbar_name {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 20px 10px 0px;
+  }
+
+  nav.navbar li.dropdownIcon {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 32px;
+  }
+
+  .dropdownIcon {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #be1416;
+  }
+  .dropdownIcon:hover {
+    color: #f797ab;
+  }
+
+  .navbar_item {
+    display: none;
+  }
+
+  ul.navbar_list, .responsive li {
+    display: block;
+  }
+
+  /**** Section 1 (Animation) ****/
+  img.nameImg, img#hotelImg.hotelImg {
+    width: 80%;
+    max-width: 477px;
+  }
+
+  /**** Section 1 (Bio) ****/
+  div.row.row-2, .row.row-3 {
+    display: block;
+    margin: auto;
+  }
+
+  .heading {
+    padding-top: 40px;
+  }
+}
+.bio {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 32px;
+  color: #788cca;
+}
+
+.blockTxt {
+  font-family: serif;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #fbd2e0;
+}
+
+.genre {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: #fbd2e0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cdd4f8;
+}
+.navbar_name {
+  font-family: fantasy;
+  color: #be1416;
+  font-size: 18px;
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.navbar_list {
+  display: flex;
+  list-style: none;
+}
+.navbar_list li {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: #be1416;
+  padding-left: 30px;
+  padding-top: 5%;
+}
+.navbar_list li:hover {
+  color: #f797ab;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+li.dropdownIcon {
+  display: none;
+}
+
+.cardContents {
+  text-align: center;
+}
+
+.cardHeading {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 32px;
+  color: #f797ab;
+}
+
+.cardCol {
+  padding: 4% 0;
+}
+.cardCol:hover {
+  background-color: #f797ab;
+}
+.cardCol:hover .cardHeading {
+  color: #788cca;
+}
+
+.footerRow {
+  text-align: center;
+  padding: 5% 0 3% 0;
+  background-color: #222526;
+}
+
+.socialRow {
+  display: block;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.footer_name {
+  font-family: fantasy;
+  color: #be1416;
+  font-size: 18px;
+  color: #f797ab;
+}
+
+.socialList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.socialItem {
+  padding: 0px 15px;
+}
+
+.socialAnchor, .socialTitle {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: white;
+}
+
+.socialAnchor:hover {
+  color: #788cca;
+}
+
+/***** Name animation *****/
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+img.nameImg {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+/***** Hotel animation *****/
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+img.hotelImg {
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+/*# sourceMappingURL=main.css.map */

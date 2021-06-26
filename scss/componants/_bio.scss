@@ -1,0 +1,26 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.bio {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.heading {
+  @include mixins.bold;
+  font-size: variables.$fontXl;
+  color: variables.$mainBlue;
+}
+
+.blockTxt {
+  @include mixins.blockTxt;
+  font-size: variables.$fontMd;
+  color: variables.$lightPink;
+}
+
+.genre {
+  @include mixins.bold;
+  font-size: variables.$fontSm;
+  color: variables.$lightPink;
+}

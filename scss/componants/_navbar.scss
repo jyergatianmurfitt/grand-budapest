@@ -1,0 +1,44 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: variables.$lightBlue;
+
+  &_name {
+    @include mixins.subheading;
+    font-size: variables.$fontMd;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  &_list {
+    display: flex;
+    list-style: none;
+
+    li {
+      @include mixins.bold;
+      font-size: variables.$fontSm;
+      color: variables.$mainRed;
+      padding-left: 30px;
+      padding-top: 5%;
+
+      &:hover {
+        color: variables.$mainPink;
+      }
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+li.dropdownIcon {
+  display: none;
+}

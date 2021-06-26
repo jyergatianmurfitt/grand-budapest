@@ -1,0 +1,57 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/**** Rows *****/
+.row-2 {
+  padding: 6% 0;
+  background-color: variables.$mainRed;
+}
+
+.row-4 {
+  padding: 6% 0;
+  background-color: variables.$lightBlue;
+}
+
+/**** Images *****/
+.nameImg, .hotelImg {
+  height: 40vh;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.secondImg {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.disneyImg, .netflixImg {
+  width: 20%;
+}
+
+/**** Sections *****/
+.section-one {
+  background-image: url('../images/bkg1.webp');
+  background-size: cover;
+  height: 100vh;
+  margin-top: 68px;
+  padding-top: 60px;
+}
+
+.galleryCol {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.header {
+  @include mixins.subheading;
+  font-size: variables.$fontXl;
+  margin-bottom: 5%;
+}

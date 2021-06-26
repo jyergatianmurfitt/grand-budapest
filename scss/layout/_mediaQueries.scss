@@ -1,0 +1,56 @@
+@use "../base/variables";
+
+/******************** Mobile ******************/
+@media screen and (max-width: 900px) {
+
+  /**** Nav ****/
+
+  h1.navbar_name {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 20px 10px 0px;
+  }
+
+  nav.navbar li.dropdownIcon {
+    display: flex;
+    justify-content: flex-start;
+    font-size: variables.$fontXl;
+  }
+
+  .dropdownIcon {
+    text-decoration: none;
+    padding-left: 20px;
+    color: variables.$mainRed;
+
+    &:hover {
+      color: variables.$mainPink;
+    }
+  }
+
+  .navbar_item {
+    display: none;
+  }
+
+  ul.navbar_list, .responsive li {
+    display: block;
+  }
+
+
+  /**** Section 1 (Animation) ****/
+
+  img.nameImg, img#hotelImg.hotelImg{
+    width: 80%;
+    max-width: 477px;
+  }
+
+  /**** Section 1 (Bio) ****/
+  div.row.row-2, .row.row-3{
+    display: block;
+    margin: auto;
+  }
+
+  .heading {
+    padding-top: 40px;
+  }
+}
