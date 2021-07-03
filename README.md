@@ -8,7 +8,7 @@ The purpose of building this homepage was to create a responsive, dynamic templa
 <b>Built with</b>
 - [HTML]
 - [SASS]
-- [JS]
+- [Bootstrap]
 
 ## Future changes/added functions
 1./ The navbar might be converted into a sidebar and a scrollspy added.
